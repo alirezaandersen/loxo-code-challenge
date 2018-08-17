@@ -40,8 +40,8 @@ describe "BalancedParenthesis" do
       expect(BalancedParenthesis.is_balanced?("(((()))")).to be_falsey
     end
 
-    it "(((()()()()))(" do
-      expect(BalancedParenthesis.is_balanced?("(((()()()()))(")).to be_falsey
+    it "(((()()()(()))" do
+      expect(BalancedParenthesis.is_balanced?("(((()()()(()))")).to be_falsey
     end
 
   end
